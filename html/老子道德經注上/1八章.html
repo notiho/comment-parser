@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>老子道德經注上 八章</title>
+    
+    <style>
+        :root {
+            --gloss-color: rgb(255, 255, 100);
+            --gloss-color-highlighted: rgb(255, 255, 50);
+            --glossed-color: rgb(150, 255, 100);
+            --glossed-color-highlighted: rgb(100, 255, 50);
+            --highlighted-color: rgba(0, 255, 0, 0.1);
+        }
+        
+        .container {
+            display: flex;
+            margin: 2em;
+        }   
+
+        .column-left {
+            flex: 70%;
+            margin: 4em;
+        }
+        
+        .column-right {
+            flex: 30%;
+            margin: 4em;
+        }
+        
+        #metadata-column {
+            position: sticky;
+            align-self: flex-start;
+            top: 2em;
+            padding: 1em;
+            font-size: x-large;
+            border-style: double;
+            border-size: 2px;
+        }
+        
+        .comment,.summary {
+            font-size: x-large;
+        }
+        
+        .original {
+            font-size: xx-large;
+        }
+        
+        .疏_prefix,.注_prefix {
+            color: grey;
+        }
+        
+        .active-span {
+            background-color: var(--highlighted-color);
+        }
+        
+        .gloss {
+            background-color: var(--gloss-color);
+        }
+        
+        .active-span > .gloss {
+            background-color: var(--gloss-color-highlighted);
+        }
+        
+        .glossed {
+            background-color: var(--glossed-color);
+        }
+        
+        .active-span > .glossed {
+            background-color: var(--glossed-color-highlighted);
+        }
+        
+        .gloss.glossed {
+            background-image: repeating-linear-gradient(45deg, var(--gloss-color) 0 3pt, var(--glossed-color) 3pt 6pt);
+        }
+    </style>
+</head>
+
+<body>
+    
+    
+    <div class="container">
+        <div class="column-left">
+            <h2>老子道德經注上 八章</h2>
+            <p><span class="original title" id="54"> 老子道德經注上 八章 </span></p><p><span class="original " id="55"> 上善若水。水善利萬物而不爭，處眾人之所惡， </span></p><p><span class="comment " id="56"> 人惡卑也。 </span></p><p><span class="original " id="57"> 故幾於道。 </span></p><p><span class="comment " id="58"> 道無水有，故曰，幾也。 </span></p><p><span class="original " id="59"> 居善地，心善淵，與善仁，言善信，正善治，事善能，動善時。夫唯不爭，故無尤。 </span></p><p><span class="comment " id="60"> 言人皆應於治道也。 </span></p>
+        </div>
+        <div class="column-right" id="metadata-column">
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        
+        const metadata = {"54": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Subtype: </span><span class=\"metadata\">t</span>\n</div>", "55": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "56": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u4e0a\u5584\u82e5\u6c34\u3002\u6c34\u5584\u5229\u842c\u7269\u800c\u4e0d\u722d\uff0c\u8655\u773e\u4eba\u4e4b\u6240\u60e1\uff0c'</span>\n</div>", "57": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "58": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u6545\u5e7e\u65bc\u9053\u3002'</span>\n</div>", "59": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "60": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u5c45\u5584\u5730\uff0c\u5fc3\u5584\u6df5\uff0c\u8207\u5584\u4ec1\uff0c\u8a00\u5584\u4fe1...\u80fd\uff0c\u52d5\u5584\u6642\u3002\u592b\u552f\u4e0d\u722d\uff0c\u6545\u7121\u5c24\u3002'</span>\n</div>"}
+        
+        window.addEventListener("mouseup", e => {
+            var elems = document.querySelectorAll(".active-span");
+            
+            [].forEach.call(elems, el => {
+                el.classList.remove("active-span");
+            });
+            
+            if (document.getSelection()) {
+                if (document.getSelection().anchorNode != null) {
+                    var elem = document.getSelection().anchorNode.parentElement;
+                    if (elem.classList.contains("gloss") || elem.classList.contains("glossed")) {
+                        elem = elem.parentElement;
+                    }
+                    const id = elem.id;
+                    if (id in metadata) {
+                        document.getElementById("metadata-column").innerHTML = metadata[id];
+                        document.getElementById(id).classList.add("active-span");
+                    }
+                }
+            }
+        });
+        
+    </script>
+</body>
+</html>

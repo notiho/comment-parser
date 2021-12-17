@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>老子道德經注上 十九章</title>
+    
+    <style>
+        :root {
+            --gloss-color: rgb(255, 255, 100);
+            --gloss-color-highlighted: rgb(255, 255, 50);
+            --glossed-color: rgb(150, 255, 100);
+            --glossed-color-highlighted: rgb(100, 255, 50);
+            --highlighted-color: rgba(0, 255, 0, 0.1);
+        }
+        
+        .container {
+            display: flex;
+            margin: 2em;
+        }   
+
+        .column-left {
+            flex: 70%;
+            margin: 4em;
+        }
+        
+        .column-right {
+            flex: 30%;
+            margin: 4em;
+        }
+        
+        #metadata-column {
+            position: sticky;
+            align-self: flex-start;
+            top: 2em;
+            padding: 1em;
+            font-size: x-large;
+            border-style: double;
+            border-size: 2px;
+        }
+        
+        .comment,.summary {
+            font-size: x-large;
+        }
+        
+        .original {
+            font-size: xx-large;
+        }
+        
+        .疏_prefix,.注_prefix {
+            color: grey;
+        }
+        
+        .active-span {
+            background-color: var(--highlighted-color);
+        }
+        
+        .gloss {
+            background-color: var(--gloss-color);
+        }
+        
+        .active-span > .gloss {
+            background-color: var(--gloss-color-highlighted);
+        }
+        
+        .glossed {
+            background-color: var(--glossed-color);
+        }
+        
+        .active-span > .glossed {
+            background-color: var(--glossed-color-highlighted);
+        }
+        
+        .gloss.glossed {
+            background-image: repeating-linear-gradient(45deg, var(--gloss-color) 0 3pt, var(--glossed-color) 3pt 6pt);
+        }
+    </style>
+</head>
+
+<body>
+    
+    
+    <div class="container">
+        <div class="column-left">
+            <h2>老子道德經注上 十九章</h2>
+            <p><span class="original title" id="187"> 老子道德經注上 十九章 </span></p><p><span class="original " id="188"> 絕聖棄智，民利百倍；絕仁棄義，民復孝慈；絕巧棄利，盜賊無有。此三者以為文不足，故令有所屬﹕見素抱樸，少私寡欲。 </span></p><p><span class="comment " id="189"> 聖智，才之善也。仁義，人之善也。巧利，用之善也。而直云絕，文甚不足，不令之有所屬，無以見其指，故曰，此三者以為文而未足，故令人有所屬，屬之於素樸寡欲。 </span></p>
+        </div>
+        <div class="column-right" id="metadata-column">
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        
+        const metadata = {"187": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Subtype: </span><span class=\"metadata\">t</span>\n</div>", "188": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "189": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u7d55\u8056\u68c4\u667a\uff0c\u6c11\u5229\u767e\u500d\uff1b\u7d55\u4ec1\u68c4\u7fa9\uff0c...\u4ee4\u6709\u6240\u5c6c\ufe55\u898b\u7d20\u62b1\u6a38\uff0c\u5c11\u79c1\u5be1\u6b32\u3002'</span>\n</div>"}
+        
+        window.addEventListener("mouseup", e => {
+            var elems = document.querySelectorAll(".active-span");
+            
+            [].forEach.call(elems, el => {
+                el.classList.remove("active-span");
+            });
+            
+            if (document.getSelection()) {
+                if (document.getSelection().anchorNode != null) {
+                    var elem = document.getSelection().anchorNode.parentElement;
+                    if (elem.classList.contains("gloss") || elem.classList.contains("glossed")) {
+                        elem = elem.parentElement;
+                    }
+                    const id = elem.id;
+                    if (id in metadata) {
+                        document.getElementById("metadata-column").innerHTML = metadata[id];
+                        document.getElementById(id).classList.add("active-span");
+                    }
+                }
+            }
+        });
+        
+    </script>
+</body>
+</html>

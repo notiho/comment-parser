@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>老子道德經注上 六章</title>
+    
+    <style>
+        :root {
+            --gloss-color: rgb(255, 255, 100);
+            --gloss-color-highlighted: rgb(255, 255, 50);
+            --glossed-color: rgb(150, 255, 100);
+            --glossed-color-highlighted: rgb(100, 255, 50);
+            --highlighted-color: rgba(0, 255, 0, 0.1);
+        }
+        
+        .container {
+            display: flex;
+            margin: 2em;
+        }   
+
+        .column-left {
+            flex: 70%;
+            margin: 4em;
+        }
+        
+        .column-right {
+            flex: 30%;
+            margin: 4em;
+        }
+        
+        #metadata-column {
+            position: sticky;
+            align-self: flex-start;
+            top: 2em;
+            padding: 1em;
+            font-size: x-large;
+            border-style: double;
+            border-size: 2px;
+        }
+        
+        .comment,.summary {
+            font-size: x-large;
+        }
+        
+        .original {
+            font-size: xx-large;
+        }
+        
+        .疏_prefix,.注_prefix {
+            color: grey;
+        }
+        
+        .active-span {
+            background-color: var(--highlighted-color);
+        }
+        
+        .gloss {
+            background-color: var(--gloss-color);
+        }
+        
+        .active-span > .gloss {
+            background-color: var(--gloss-color-highlighted);
+        }
+        
+        .glossed {
+            background-color: var(--glossed-color);
+        }
+        
+        .active-span > .glossed {
+            background-color: var(--glossed-color-highlighted);
+        }
+        
+        .gloss.glossed {
+            background-image: repeating-linear-gradient(45deg, var(--gloss-color) 0 3pt, var(--glossed-color) 3pt 6pt);
+        }
+    </style>
+</head>
+
+<body>
+    
+    
+    <div class="container">
+        <div class="column-left">
+            <h2>老子道德經注上 六章</h2>
+            <p><span class="original title" id="46"> 老子道德經注上 六章 </span></p><p><span class="original " id="47"> <span class=" glossed">谷神</span>不死，是謂玄牝。玄牝之<span class=" glossed">門</span>，是謂天地根。緜緜若存，用之不勤。 </span></p><p><span class="comment " id="48"> <span class="gloss ">谷神，谷中央無谷也。</span>無形無影，無逆無違，處卑不動，守靜不衰，谷以之成而不見其形，此至物也。處卑而不可得名，<span class=" glossed">故</span>謂<span class=" glossed">天地之根</span>，緜緜若存，用之不 勤。<span class="gloss ">門，玄牝之所由也，本其所由，與極同體，</span><span class="gloss ">故謂之天地之根也。</span>欲言存邪，則不見其形，欲言亡邪，萬物以之生。故緜緜若存也，無物不成，用而不勞也。故曰，用而不勤也。 </span></p>
+        </div>
+        <div class="column-right" id="metadata-column">
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        
+        const metadata = {"46": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Subtype: </span><span class=\"metadata\">t</span>\n</div>", "47": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Glossed: </span><span class=\"metadata\">for '\u8c37\u795e': '\u8c37\u795e\uff0c\u8c37\u4e2d\u592e\u7121\u8c37\u4e5f\u3002'; for '\u9580': '\u9580\uff0c\u7384\u725d\u4e4b\u6240\u7531\u4e5f\uff0c\u672c\u5176\u6240\u7531\uff0c\u8207\u6975\u540c\u9ad4\uff0c\u6545\u8b02\u4e4b\u5929\u5730\u4e4b\u6839\u4e5f\u3002'</span>\n</div>", "48": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u8c37\u795e\u4e0d\u6b7b\uff0c\u662f\u8b02\u7384\u725d\u3002\u7384\u725d\u4e4b\u9580\uff0c...\u8b02\u5929\u5730\u6839\u3002\u7ddc\u7ddc\u82e5\u5b58\uff0c\u7528\u4e4b\u4e0d\u52e4\u3002'</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Glosses: </span><span class=\"metadata\">for '\u8c37\u795e': '\u8c37\u795e\uff0c\u8c37\u4e2d\u592e\u7121\u8c37\u4e5f\u3002'; for '\u9580': '\u9580\uff0c\u7384\u725d\u4e4b\u6240\u7531\u4e5f\uff0c\u672c\u5176\u6240\u7531\uff0c\u8207\u6975\u540c\u9ad4\uff0c\u6545\u8b02\u4e4b\u5929\u5730\u4e4b\u6839\u4e5f\u3002'; for '\u5929\u5730\u4e4b\u6839': '\u9580\uff0c\u7384\u725d\u4e4b\u6240\u7531\u4e5f\uff0c\u672c\u5176\u6240\u7531\uff0c\u8207\u6975\u540c\u9ad4\uff0c\u6545\u8b02\u4e4b\u5929\u5730\u4e4b\u6839\u4e5f\u3002'; for '\u6545': '\u6545\u8b02\u4e4b\u5929\u5730\u4e4b\u6839\u4e5f\u3002'</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Glossed: </span><span class=\"metadata\">for '\u5929\u5730\u4e4b\u6839': '\u9580\uff0c\u7384\u725d\u4e4b\u6240\u7531\u4e5f\uff0c\u672c\u5176\u6240\u7531\uff0c\u8207\u6975\u540c\u9ad4\uff0c\u6545\u8b02\u4e4b\u5929\u5730\u4e4b\u6839\u4e5f\u3002'; for '\u6545': '\u6545\u8b02\u4e4b\u5929\u5730\u4e4b\u6839\u4e5f\u3002'</span>\n</div>"}
+        
+        window.addEventListener("mouseup", e => {
+            var elems = document.querySelectorAll(".active-span");
+            
+            [].forEach.call(elems, el => {
+                el.classList.remove("active-span");
+            });
+            
+            if (document.getSelection()) {
+                if (document.getSelection().anchorNode != null) {
+                    var elem = document.getSelection().anchorNode.parentElement;
+                    if (elem.classList.contains("gloss") || elem.classList.contains("glossed")) {
+                        elem = elem.parentElement;
+                    }
+                    const id = elem.id;
+                    if (id in metadata) {
+                        document.getElementById("metadata-column").innerHTML = metadata[id];
+                        document.getElementById(id).classList.add("active-span");
+                    }
+                }
+            }
+        });
+        
+    </script>
+</body>
+</html>

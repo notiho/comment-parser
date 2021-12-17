@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>老子河上公章句上 辯德</title>
+    
+    <style>
+        :root {
+            --gloss-color: rgb(255, 255, 100);
+            --gloss-color-highlighted: rgb(255, 255, 50);
+            --glossed-color: rgb(150, 255, 100);
+            --glossed-color-highlighted: rgb(100, 255, 50);
+            --highlighted-color: rgba(0, 255, 0, 0.1);
+        }
+        
+        .container {
+            display: flex;
+            margin: 2em;
+        }   
+
+        .column-left {
+            flex: 70%;
+            margin: 4em;
+        }
+        
+        .column-right {
+            flex: 30%;
+            margin: 4em;
+        }
+        
+        #metadata-column {
+            position: sticky;
+            align-self: flex-start;
+            top: 2em;
+            padding: 1em;
+            font-size: x-large;
+            border-style: double;
+            border-size: 2px;
+        }
+        
+        .comment,.summary {
+            font-size: x-large;
+        }
+        
+        .original {
+            font-size: xx-large;
+        }
+        
+        .疏_prefix,.注_prefix {
+            color: grey;
+        }
+        
+        .active-span {
+            background-color: var(--highlighted-color);
+        }
+        
+        .gloss {
+            background-color: var(--gloss-color);
+        }
+        
+        .active-span > .gloss {
+            background-color: var(--gloss-color-highlighted);
+        }
+        
+        .glossed {
+            background-color: var(--glossed-color);
+        }
+        
+        .active-span > .glossed {
+            background-color: var(--glossed-color-highlighted);
+        }
+        
+        .gloss.glossed {
+            background-image: repeating-linear-gradient(45deg, var(--gloss-color) 0 3pt, var(--glossed-color) 3pt 6pt);
+        }
+    </style>
+</head>
+
+<body>
+    
+    
+    <div class="container">
+        <div class="column-left">
+            <h2>老子河上公章句上 辯德</h2>
+            <p><span class="original title" id="826"> 老子河上公章句上 辯德 </span></p><p><span class="original " id="827"> 知人者<span class=" glossed">智</span>， </span></p><p><span class="comment " id="828"> 能知人好惡，<span class="gloss ">是為智。</span> </span></p><p><span class="original " id="829"> 自知者明。 </span></p><p><span class="comment " id="830"> 人能自知賢與不肖，是為反聽無聲，內視無形，故為明也。 </span></p><p><span class="original " id="831"> 勝人者有力， </span></p><p><span class="comment " id="832"> 能勝人者，不過以威力也。 </span></p><p><span class="original " id="833"> 自勝者強。 </span></p><p><span class="comment " id="834"> 人能自勝己情欲，則天下無有能與己爭者，故為強也。 </span></p><p><span class="original " id="835"> 知足者富， </span></p><p><span class="comment " id="836"> 人能知足，則長保福祿，故為富也。 </span></p><p><span class="original " id="837"> 強行者有志， </span></p><p><span class="comment " id="838"> 人能強力行善，則為有意於道，道亦有意於人。 </span></p><p><span class="original " id="839"> 不失其所者久， </span></p><p><span class="comment " id="840"> 人能自節養，不失其所受天之精氣，則可以久。 </span></p><p><span class="original " id="841"> 死而不亡者壽。 </span></p><p><span class="comment " id="842"> 目不妄視，耳不妄聽，口不妄言，則無怨惡於天下，故長壽。 </span></p>
+        </div>
+        <div class="column-right" id="metadata-column">
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        
+        const metadata = {"826": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Subtype: </span><span class=\"metadata\">t</span>\n</div>", "827": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Glossed: </span><span class=\"metadata\">for '\u667a': '\u662f\u70ba\u667a\u3002'</span>\n</div>", "828": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u77e5\u4eba\u8005\u667a\uff0c'</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Glosses: </span><span class=\"metadata\">for '\u667a': '\u662f\u70ba\u667a\u3002'</span>\n</div>", "829": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "830": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u81ea\u77e5\u8005\u660e\u3002'</span>\n</div>", "831": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "832": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u52dd\u4eba\u8005\u6709\u529b\uff0c'</span>\n</div>", "833": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "834": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u81ea\u52dd\u8005\u5f37\u3002'</span>\n</div>", "835": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "836": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u77e5\u8db3\u8005\u5bcc\uff0c'</span>\n</div>", "837": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "838": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u5f37\u884c\u8005\u6709\u5fd7\uff0c'</span>\n</div>", "839": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "840": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u4e0d\u5931\u5176\u6240\u8005\u4e45\uff0c'</span>\n</div>", "841": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "842": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u6b7b\u800c\u4e0d\u4ea1\u8005\u58fd\u3002'</span>\n</div>"}
+        
+        window.addEventListener("mouseup", e => {
+            var elems = document.querySelectorAll(".active-span");
+            
+            [].forEach.call(elems, el => {
+                el.classList.remove("active-span");
+            });
+            
+            if (document.getSelection()) {
+                if (document.getSelection().anchorNode != null) {
+                    var elem = document.getSelection().anchorNode.parentElement;
+                    if (elem.classList.contains("gloss") || elem.classList.contains("glossed")) {
+                        elem = elem.parentElement;
+                    }
+                    const id = elem.id;
+                    if (id in metadata) {
+                        document.getElementById("metadata-column").innerHTML = metadata[id];
+                        document.getElementById(id).classList.add("active-span");
+                    }
+                }
+            }
+        });
+        
+    </script>
+</body>
+</html>

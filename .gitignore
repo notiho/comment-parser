@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+
+.cache/
+
+svg-inkscape/
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb

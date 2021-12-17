@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Random Paragraph</title>
+    
+    <style>
+        :root {
+            --gloss-color: rgb(255, 255, 100);
+            --gloss-color-highlighted: rgb(255, 255, 50);
+            --glossed-color: rgb(150, 255, 100);
+            --glossed-color-highlighted: rgb(100, 255, 50);
+            --highlighted-color: rgba(0, 255, 0, 0.3);
+        }
+        
+        .container {
+            margin: 10em;
+        }
+        
+        #title-div {
+            font-size: xx-large;
+        }
+        
+        .comment,.summary {
+            font-size: x-large;
+        }
+        
+        .original {
+            font-size: xx-large;
+        }
+        
+        .疏_prefix,.注_prefix {
+            color: grey;
+        }
+        
+        .active-span {
+            background-color: var(--highlighted-color);
+        }
+        
+        .gloss {
+            background-color: var(--gloss-color);
+        }
+        
+        .active-span > .gloss {
+            background-color: var(--gloss-color-highlighted);
+        }
+        
+        .glossed {
+            background-color: var(--glossed-color);
+        }
+        
+        .active-span > .glossed {
+            background-color: var(--glossed-color-highlighted);
+        }
+        
+        .gloss.glossed {
+            background-image: repeating-linear-gradient(45deg, var(--gloss-color) 0 3pt, var(--glossed-color) 3pt 6pt);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center; margin: 4em">
+        <button id="random-button">Random</button>
+    </div>
+    
+    <div class="container">
+        <div id="title-div"></div>
+        <div id="text-div"></div>
+    </div>
+    
+    <script type="text/javascript">
+        <?python
+            import json
+            json_texts = []
+            for t in texts:
+                json_texts.append({
+                    "title": t.get_title_section(),
+                    "html": t.__html__(),
+                    "numParagraphs": len(t.paragraphs),
+                    "originalTitle": t.metadata["original_title"]})
+        ?>
+        const texts = ${structure: json.dumps(json_texts)};
+        const originalTitles = ${structure: json.dumps(list(set([i["originalTitle"] for i in json_texts])))};
+        
+        const titleDiv = document.getElementById("title-div");
+        const textDiv = document.getElementById("text-div");
+        const randomButton = document.getElementById("random-button");
+        
+        randomButton.addEventListener("click", e => {
+            const originalTitle = originalTitles[originalTitles.length * Math.random() << 0];
+            const textsWithThisTitle = texts.filter(i => i.originalTitle == originalTitle);
+            const text = textsWithThisTitle[textsWithThisTitle.length * Math.random() << 0];
+            const paragraphIndex = text.numParagraphs * Math.random() << 0;
+            
+            document.title = text.title;
+            titleDiv.innerHTML = text.title;
+            textDiv.innerHTML = text.html;
+            
+            const paragraph = textDiv.childNodes[paragraphIndex]
+            paragraph.classList.add("active-span");
+            paragraph.scrollIntoView({
+                block: "center"
+            });
+        });
+        
+    </script>
+</body>
+</html>

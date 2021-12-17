@@ -1,0 +1,460 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dictionary</title>
+    
+    <style>
+        :root {
+            --gloss-color: rgb(255, 255, 100);
+            --glossed-color: rgb(150, 255, 100);
+        }
+        
+        #input-container {
+            text-align: center;
+            padding: 10pt;
+            font-size: x-large;
+        }
+        
+        #fulltext-options-container {
+            text-align: center;
+            padding: 10pt;
+            font-size: x-large;
+            display: none;
+        }
+        
+        #query-input {
+            font-size: x-large;
+        }
+        
+        #body-container {
+            display: flex;
+            margin: 2em;
+        }   
+
+        #glosses-column {
+            flex: 70%;
+            margin: 2em;
+        }
+        
+        #additional-info-column {
+            flex: 30%;
+            margin: 2em;
+        }
+        
+        .gloss-list-entry {
+            margin: 10pt;
+            border: solid;
+            padding: 10pt;
+        }
+        
+        .spurious-gloss-list-entry {
+            border-color: grey;
+        }
+        
+        .the-gloss {
+            font-size: x-large;
+        }
+        
+        .gloss-text-title {
+            font-size: x-large;
+        }
+        
+        .glossed-context {
+            font-size: x-large;
+            color: rgba(0, 0, 0, 0.7);
+        }
+        
+        #overlay-container {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 2;
+        }
+        
+        #text-container {
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            top: 10%;
+            left: 10%;
+            overflow: scroll;
+            border: solid;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 10em;
+            box-sizing: border-box;
+        }
+        
+        #title-container {
+            position: absolute;
+            text-align: center;
+            height: 5%;
+            overflow: hidden;
+            top: 2.5%;
+            left: 0;
+            right: 0;
+            font-size: xx-large;
+        }
+        
+        .comment,.summary {
+            font-size: x-large;
+        }
+        
+        .original {
+            font-size: xx-large;
+        }
+        
+        .疏_prefix,.注_prefix {
+            color: grey;
+        }
+        
+        .gloss {
+            background-color: var(--gloss-color);
+        }
+        
+        .glossed {
+            background-color: var(--glossed-color);
+        }
+        
+        .kangxi-box {
+            margin: 10pt;
+            border: solid;
+            padding: 10pt;
+        }
+        
+        .kangxi-headcharacter {
+            font-size: xx-large;
+        }
+        
+        /* kangxi meaning group */
+        
+        .k1 {
+            font-size: x-large;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+        
+        .kangxi-definition-part {
+            
+        }
+        
+        .total-results-div {
+            margin: 10pt;
+            padding: 10pt;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="input-container">
+        <label for="query-input">Query: </label>
+        <input type="text" id="query-input" name="query-input" />
+        &emsp;&emsp;
+        <button id="random-button">Random</button>
+        <br>
+        <input type="checkbox" id="include-spurious" name="include-spurious">
+        <label for="include-spurious">Include potentially spurious results</label>
+        &emsp;&emsp;
+        <input type="checkbox" id="fulltext" name="fulltext">
+        <label for="fulltext">Fulltext search</label>
+    </div>
+    
+    <div id="fulltext-options-container">
+        <input type="radio" name="fulltext-mode" value="fulltext-standard" id="fulltext-standard" checked>
+        <label for="fulltext-standard">Standard</label>
+        &emsp;&emsp;
+        <input type="radio" name="fulltext-mode" value="regexp-contains" id="regexp-contains">
+        <label for="regexp-contains">Contains regular expression</label>
+        &emsp;&emsp;
+        <input type="radio" name="fulltext-mode" value="regexp-match" id="regexp-match">
+        <label for="regexp-match">Matches regular expression</label>
+        <br>
+        Search:&emsp;&emsp;
+        <input type="checkbox" id="fulltext-search-title" name="fulltext-search-title">
+        <label for="fulltext-search-title">Text title</label>
+        &emsp;&emsp;
+        <input type="checkbox" id="fulltext-search-gloss" name="fulltext-search-gloss" checked>
+        <label for="fulltext-search-gloss">Gloss</label>
+        &emsp;&emsp;
+        <input type="checkbox" id="fulltext-search-glossed" name="fulltext-search-glossed">
+        <label for="fulltext-search-glossed">Glossed</label>
+        &emsp;&emsp;
+        <input type="checkbox" id="fulltext-search-glossed-sentences" name="fulltext-search-glossed-sentences">
+        <label for="fulltext-search-glossed-sentences">Glossed sentences</label>
+    </div>
+    
+    <div id="body-container">
+        <div id="glosses-column"></div>
+        <div id="additional-info-column"></div>
+    </div>
+    
+    <div id="overlay-container">
+        <div id="title-container"></div>
+        <div id="text-container"></div>
+    </div>
+    
+    <script type="text/javascript">
+        <?python
+            from comment_parser.glosses.gloss_json_encoder import GlossJSONEncoder
+            
+            glosses_by_glossed = dict()
+            for g in glosses:
+                if g.glossed_value() in glosses_by_glossed:
+                    glosses_by_glossed[g.glossed_value()].append(g)
+                else:
+                    glosses_by_glossed[g.glossed_value()] = [g]
+            
+            for i in glosses_by_glossed.values():
+                i.sort()
+            
+            glosses_by_glossed_json = GlossJSONEncoder(ensure_ascii=False).encode(glosses_by_glossed)
+            
+            texts_by_id = dict()
+            for t in texts:
+                texts_by_id[id(t)] = t.plain_html()
+            texts_by_id_json = GlossJSONEncoder(ensure_ascii=False).encode(texts_by_id)
+        ?>
+        
+        const glosses_by_glossed = ${structure: glosses_by_glossed_json};
+        const all_glossed = Object.keys(glosses_by_glossed);
+        const texts_by_id = ${structure: texts_by_id_json};
+        const kangxi = ${structure: GlossJSONEncoder(ensure_ascii=False).encode(kangxi)};
+        
+        const glossesColumn = document.getElementById("glosses-column");
+        const additionalInfoColumn = document.getElementById("additional-info-column");
+        const queryInput = document.getElementById("query-input");
+        const includeSpurious = document.getElementById("include-spurious");
+        const fulltextCheckbox = document.getElementById("fulltext");
+        const fulltextSearchTitle = document.getElementById("fulltext-search-title");
+        const fulltextSearchGloss = document.getElementById("fulltext-search-gloss");
+        const fulltextSearchGlossed = document.getElementById("fulltext-search-glossed");
+        const fulltextSearchGlossedSentences = document.getElementById("fulltext-search-glossed-sentences");
+        const fulltextStandardMode = document.getElementById("fulltext-standard");
+        const fulltextRegexpContainsMode = document.getElementById("regexp-contains");
+        const fulltextRegexpMatchMode = document.getElementById("regexp-match");
+        const fulltextOptionsContainer = document.getElementById("fulltext-options-container");
+        const overlayContainer = document.getElementById("overlay-container");
+        const titleContainer = document.getElementById("title-container");
+        const textContainer = document.getElementById("text-container");
+        const randomButton = document.getElementById("random-button");
+        
+        function displayTextOverlay(text_id, title, glossed, content, repetitions) {
+            overlayContainer.style.display = "block";
+            titleContainer.innerHTML = title;
+            textContainer.innerHTML = texts_by_id[text_id];
+                        
+            function updateRegionSpanWithHighlights(regionId) {
+                const regionSpan = document.getElementById("region-" + regionId);
+                
+                var newHTML = "";
+                const str = regionSpan.textContent;
+                for (var i = 0; i < str.length; ++i) {
+                    if (glossed.some(g => g.region_id == regionId && g.end == i)) {
+                        newHTML += /*<span>*/'</span>';
+                    }
+                    if (regionId == content.region_id && content.end == i) {
+                        newHTML += /*<span>*/'</span>';
+                    }
+                    if (repetitions.some(g => g.region_id == regionId && g.end == i)) {
+                        newHTML += /*<span>*/'</span>';
+                    }
+                    if (glossed.some(g => g.region_id == regionId && g.start == i)) {
+                        newHTML += '<span class="glossed">';
+                    }
+                    if (regionId == content.region_id && content.start == i) {
+                        newHTML += '<span class="gloss">';
+                    }
+                    if (repetitions.some(g => g.region_id == regionId && g.start == i)) {
+                        newHTML += '<span class="gloss">';
+                    }
+                   
+                    newHTML += str[i];
+                }
+                regionSpan.innerHTML = newHTML;
+            }
+            for (const i of glossed) {
+                updateRegionSpanWithHighlights(i.region_id);
+            }
+            updateRegionSpanWithHighlights(content.region_id);
+            for (const i of repetitions) {
+                updateRegionSpanWithHighlights(i.region_id);
+            }
+            
+            document.querySelector("#region-" + content.region_id + " > " + ".gloss").scrollIntoView({
+                block: "center"
+            });
+        }
+        
+        overlayContainer.addEventListener("click", e => {
+            if (e.target == overlayContainer) {
+                overlayContainer.style.display = "none";
+            }
+        });
+        
+        function textTitleSection(gloss) {
+            if (gloss.text_section != "") {
+                return gloss.text_title + "•" + gloss.text_section;
+            } else {
+                return gloss.text_title;
+            }
+        }
+        
+        function glossListEntry(g) {
+            const entry = document.createElement("div");
+            entry.classList.add("gloss-list-entry");
+            if (g.potentially_spurious) {
+                entry.classList.add("spurious-gloss-list-entry");
+            }
+            
+            const content = fulltextCheckbox.checked ? g.content.value : g.content_with_glossed_replaced_by_tilde;
+            const glossed_sentences = fulltextCheckbox.checked ? g.glossed_sentences : g.glossed_sentences_with_glossed_replaced_by_tilde;
+            
+            inner = '<div class="the-gloss">' + content + '</div>' + 
+                  '<div class="gloss-text-title">《' + textTitleSection(g) + '》</div>';
+            for (const s of glossed_sentences) {
+                inner += '<div class="glossed-context">' + s + '</div>';
+            }
+            entry.innerHTML = inner;
+            
+            entry.addEventListener("click", e => {
+                displayTextOverlay(g.text_id, textTitleSection(g),
+                    g.glossed, g.content, g.repetitions);
+            });
+            
+            return entry;
+        }
+        
+        function kangxiEntry(c) {
+            if (!(c in kangxi)) {
+                return null;
+            } else {
+                const entry = document.createElement("div");
+                entry.classList.add("kangxi-box");
+                
+                entry.innerHTML += '<div class="kangxi-headcharacter">' +
+                    c + '</div>';
+                
+                entry.innerHTML += kangxi[c];
+                
+                return entry;
+            }
+        }
+        
+        function updateGlosses(glosses) {
+            const documentFragment = document.createDocumentFragment();
+            
+            var totalSpurious = 0;
+            
+            for (const g of glosses) {
+                if (g.potentially_spurious) {
+                    totalSpurious += 1;
+                }
+                if (includeSpurious.checked || !g.potentially_spurious) {
+                    documentFragment.appendChild(glossListEntry(g));
+                }
+            }
+            glossesColumn.innerHTML = "<div class=\"total-results-div\">" + glosses.length + " results (" + totalSpurious + " potentially spurious) </div>";
+            glossesColumn.appendChild(documentFragment);
+        }
+        
+        function updateKangxi(query) {
+            additionalInfoColumn.innerHTML = "";
+            for (var i = 0; i < query.length; ++i) {
+                const entry = kangxiEntry(query[i]);
+                if (entry != null) {
+                    additionalInfoColumn.appendChild(entry);
+                }
+            }
+        }
+        
+        function updateGlossListKangxi() {
+            const query = queryInput.value;
+            var queryRegex = null;
+            if (!fulltextStandardMode.checked) {
+                const hanQuery = query.replaceAll("\\w", "\\p{Script=Han}");
+                try {
+                    if (fulltextRegexpContainsMode.checked) {
+                        queryRegex = new RegExp(hanQuery, "u"); 
+                    } else {
+                        queryRegex = new RegExp("^" + hanQuery + "$", "u");
+                    }
+                } catch(e) {
+                    console.log("Invalid regex: " + e);
+                    queryRegex = new RegExp("錯誤", "u");
+                }
+            }
+            
+            var glosses = [];
+            if (fulltextCheckbox.checked) {
+                for (const [_, gs] of Object.entries(glosses_by_glossed)) {
+                    for (const g of gs) {
+                        function checkCriterion(searchCheckbox, text) {
+                            if (!searchCheckbox.checked) {
+                                return false;
+                            } else {
+                                if (fulltextStandardMode.checked) {
+                                    return text.includes(query);
+                                } else {
+                                    return queryRegex.test(text);
+                                }
+                            }
+                        }
+                        if (checkCriterion(fulltextSearchTitle, g.text_title)
+                            || checkCriterion(fulltextSearchTitle, g.text_section)
+                            || checkCriterion(fulltextSearchGloss, g.content.value)
+                            || checkCriterion(fulltextSearchGlossed, g.glossed[0].value)
+                            || g.glossed_sentences.some(
+                                i => checkCriterion(fulltextSearchGlossedSentences, i))) {
+                            glosses.push(g);
+                        }
+                    }
+                }
+            } else if (query in glosses_by_glossed) {
+                glosses = glosses_by_glossed[queryInput.value];
+            } 
+            updateGlosses(glosses);
+            updateKangxi(query);
+        }
+        
+        updateGlossListKangxi();
+        fulltextOptionsContainer.style.display = 
+                fulltextCheckbox.checked ? "block" : "none";
+        
+        queryInput.addEventListener("input", updateGlossListKangxi);
+        includeSpurious.addEventListener("input", updateGlossListKangxi);
+        fulltextCheckbox.addEventListener("input", function (e) {
+            fulltextOptionsContainer.style.display = 
+                fulltextCheckbox.checked ? "block" : "none";
+            updateGlossListKangxi();
+        });
+        fulltextSearchTitle.addEventListener("input", updateGlossListKangxi);
+        fulltextSearchGloss.addEventListener("input", updateGlossListKangxi);
+        fulltextSearchGlossed.addEventListener("input", updateGlossListKangxi);
+        fulltextStandardMode.addEventListener("input", updateGlossListKangxi);
+        fulltextRegexpContainsMode.addEventListener("input", updateGlossListKangxi);
+        fulltextRegexpMatchMode.addEventListener("input", updateGlossListKangxi);
+        randomButton.addEventListener("click", function (e) {
+            function pickRandom() {
+                const glosses = glosses_by_glossed[all_glossed[all_glossed.length * Math.random() << 0]];
+                return glosses[glosses.length * Math.random() << 0];
+            }
+            var gloss = pickRandom();
+            /*while (!gloss.potentially_spurious) {
+                gloss = pickRandom();
+            }*/
+            updateGlosses([gloss]);
+            updateKangxi(gloss.glossed[0].value);
+            queryInput.value = gloss.glossed[0].value;
+        });
+    </script>
+</body>
+
+

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<text title="老子道德經注下" section="四十六章" juan="1" original_title="道德經">
+	<paragraph index="0">
+		<region typus="original" subtype="title" id="503" explains="">
+老子道德經注下 四十六章
+		</region>
+	</paragraph>
+	<paragraph index="1">
+		<region typus="original" subtype="" id="504" explains="">
+天下有道，卻走馬以糞。
+		</region>
+	</paragraph>
+	<paragraph index="2">
+		<region typus="comment" subtype="" id="505" explains="504">
+天下有道，知足知止，無求於外，各修其內而已，故卻走馬以治田糞也。
+		</region>
+	</paragraph>
+	<paragraph index="3">
+		<region typus="original" subtype="" id="506" explains="">
+天下無道，戎馬生於郊。
+		</region>
+	</paragraph>
+	<paragraph index="4">
+		<region typus="comment" subtype="" id="507" explains="506">
+貪欲無厭，不修其內，各求於外，故戎馬生於郊也。
+		</region>
+	</paragraph>
+	<paragraph index="5">
+		<region typus="original" subtype="" id="508" explains="">
+禍莫大於不知足；咎莫大於欲得。故知足之足，常足矣。
+		</region>
+	</paragraph>
+</text>

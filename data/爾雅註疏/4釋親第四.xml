@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<text title="爾雅註疏" section="釋親第四" juan="4" original_title="爾雅">
+	<paragraph index="0">
+		<region typus="original" subtype="title" id="2545" explains="">
+爾雅註疏 釋親第四
+		</region>
+	</paragraph>
+	<paragraph index="1">
+		<region typus="comment" subtype="疏_prefix" id="2546" explains="">
+【疏】
+		</region>
+		<region typus="comment" subtype="疏_body" id="2547" explains="2545">
+釋曰：案《禮記·大傳》云：「聖人南面而聽天下，所最先者五，民不與焉。一曰治親。」《蒼頡》曰：「親，愛也，近也。」然則親者，恩愛狎近、不疏遠之稱也。《書》曰：「克明俊德，以親九族。」《喪服小記》曰：「親親以三為五，以五為九，上殺、下殺、旁殺，而親畢矣。」以九族之親，其名謂非一，此篇釋之，故曰「釋親」。
+		</region>
+	</paragraph>
+	<paragraph index="2">
+		<region typus="original" subtype="" id="2548" explains="">
+父為考，母為妣
+		</region>
+		<region typus="comment" subtype="" id="2549" explains="2548">
+《禮記》曰：「生曰父、母、妻，死曰考、妣、嬪。」今世學者從之。案《尚書》曰：「大傷厥考心」，「事厥考厥長」，「聰聽祖考之彝訓」，「如喪考妣。」《公羊傳》曰：「惠公者何？隱之考也。仲子者何？桓之母也。」《蒼頡篇》曰：「考妣延年。」《書》曰：「嬪於虞。」《書》曰：「聿嬪於京。」《周禮》有九嬪之官，明此非死生之異稱矣。其義猶今謂兄為晜、妹為胃，即是此例也。○妣音比。
+		</region>
+		<region typus="original" subtype="" id="2550" explains="">
+父之考為王父，父之妣為王母。
+		</region>
+		<region typus="comment" subtype="" id="2551" explains="2550">
+如王者尊之。
+		</region>
+		<region typus="original" subtype="" id="2552" explains="">
+王父之考為曾祖王父，王父之妣為曾祖王母。
+		</region>
+		<region typus="comment" subtype="" id="2553" explains="2552">
+曾猶重也。
+		</region>
+		<region typus="original" subtype="" id="2554" explains="">
+曾祖王父之考為高祖王父，曾祖王父之妣為高祖王母。
+		</region>
+		<region typus="comment" subtype="" id="2555" explains="2554">
+高者言最在上。
+		</region>
+		<region typus="original" subtype="" id="2556" explains="">
+父之世父叔父為從祖祖父，父之世母叔母為從祖祖母。
+		</region>
+		<region typus="comment" subtype="" id="2557" explains="2556">
+從祖而別世統異故。
+		</region>
+		<region typus="original" subtype="" id="2558" explains="">
+父之晜弟先生為世父，後生為叔父。
+		</region>
+		<region typus="comment" subtype="" id="2559" explains="2558">
+世有為嫡者，嗣世統故也。
+		</region>
+		<region typus="original" subtype="" id="2560" explains="">
+男子先生為兄，後生為弟。謂女子先生為姊，後生為妹。父之姊妹為姑，父之從父晜弟為從祖父，父之從祖晜弟為族父。族父之子相謂為族晜弟，族晜弟之子相謂為親同姓。
+		</region>
+		<region typus="comment" subtype="" id="2561" explains="2560">
+同姓之親無服屬。
+		</region>
+		<region typus="original" subtype="" id="2562" explains="">
+兄之子弟之子，相謂為從父晜弟。
+		</region>
+		<region typus="comment" subtype="" id="2563" explains="2562">
+從父而別。
+		</region>
+		<region typus="original" subtype="" id="2564" explains="">
+子之子為孫，
+		</region>
+		<region typus="comment" subtype="" id="2565" explains="2564">
+孫猶後也。
+		</region>
+		<region typus="original" subtype="" id="2566" explains="">
+孫之子為曾孫，
+		</region>
+		<region typus="comment" subtype="" id="2567" explains="2566">
+曾猶重也。
+		</region>
+		<region typus="original" subtype="" id="2568" explains="">
+曾孫之子為玄孫，
+		</region>
+		<region typus="comment" subtype="" id="2569" explains="2568">
+玄者，言親屬微昧也。
+		</region>
+		<region typus="original" subtype="" id="2570" explains="">
+玄孫之子為來孫，
+		</region>
+		<region typus="comment" subtype="" id="2571" explains="2570">
+言有往來之親
+		</region>
+		<region typus="original" subtype="" id="2572" explains="">
+來孫之子為晜孫，
+		</region>
+		<region typus="comment" subtype="" id="2573" explains="2572">
+晜，後也。《汲塚竹》書曰：「不窋之晜孫。」
+		</region>
+		<region typus="original" subtype="" id="2574" explains="">
+晜孫之子為仍孫，
+		</region>
+		<region typus="comment" subtype="" id="2575" explains="2574">
+仍亦重也。
+		</region>
+		<region typus="original" subtype="" id="2576" explains="">
+仍孫之子為雲孫。
+		</region>
+		<region typus="comment" subtype="" id="2577" explains="2576">
+言輕遠如浮雲。
+		</region>
+		<region typus="original" subtype="" id="2578" explains="">
+王父之姊妹為王姑，曾祖王父之姊妹為曾祖王姑，高祖王父之姊妹為高祖王姑，父之從父姊妹為從祖姑，父之從祖姊妹為族祖姑。父之從父晜弟之母為從祖王母，父之從祖晜弟之母為族祖王母。父之兄妻為世母，父之弟妻為叔母。父之從父晜弟之妻為從祖母，父之從祖晜弟之妻為族祖母。父之從祖祖父為族曾王父，父之從祖祖母為族曾王母。父之妾為庶母。祖，王父也。晜，兄也。
+		</region>
+		<region typus="comment" subtype="" id="2579" explains="2578">
+今江東人通言晜。○從，並才用切。晜音昆。
+		</region>
+		<region typus="original" subtype="" id="2580" explains="">
+宗族。
+		</region>
+		<region typus="comment" subtype="" id="2583" explains="2548,2549,2550,2551,2552,2553,2554,2555,2556,2557,2558,2559,2560,2561,2562,2563,2564,2565,2566,2567,2568,2569,2570,2571,2572,2573,2574,2575,2576,2577,2578,2579,2580">
+○
+		</region>
+		<region typus="comment" subtype="" id="2586" explains="2548,2549,2550,2551,2552,2553,2554,2555,2556,2557,2558,2559,2560,2561,2562,2563,2564,2565,2566,2567,2568,2569,2570,2571,2572,2573,2574,2575,2576,2577,2578,2579,2580,2583">
+○
+		</region>
+		<region typus="comment" subtype="" id="2591" explains="2548,2549,2550,2551,2552,2553,2554,2555,2556,2557,2558,2559,2560,2561,2562,2563,2564,2565,2566,2567,2568,2569,2570,2571,2572,2573,2574,2575,2576,2577,2578,2579,2580,2583,2586">
+○
+		</region>
+		<region typus="comment" subtype="" id="2594" explains="2548,2549,2550,2551,2552,2553,2554,2555,2556,2557,2558,2559,2560,2561,2562,2563,2564,2565,2566,2567,2568,2569,2570,2571,2572,2573,2574,2575,2576,2577,2578,2579,2580,2583,2586,2591">
+○
+		</region>
+		<region typus="comment" subtype="" id="2597" explains="2548,2549,2550,2551,2552,2553,2554,2555,2556,2557,2558,2559,2560,2561,2562,2563,2564,2565,2566,2567,2568,2569,2570,2571,2572,2573,2574,2575,2576,2577,2578,2579,2580,2583,2586,2591,2594">
+○
+		</region>
+	</paragraph>
+	<paragraph index="3">
+		<region typus="comment" subtype="疏_prefix" id="2581" explains="">
+【疏】「父為」至「宗族」。
+		</region>
+		<region typus="comment" subtype="疏_body" id="2582" explains="2548,2550,2552,2554,2556,2558,2560,2562,2564,2566,2568,2570,2572,2574,2576,2578,2580">
+○釋曰：此別同宗親族。《白虎通》曰：「父，矩也，以度教子也。」又為考。考，成也，言有成德。《廣雅》云：「母，牧也。」言育養子也。又為妣。妣，媲也，媲匹於父。《廣雅》又云：「兄，況也。」況於父。又謂之晜。弟，悌也。言順於兄。子，孜也。以孝事父，常孜孜也。孫，順也。順於祖。男，任也。任家事也。女，如也。《白虎通》曰：「言如人也。」徐鍇曰：「女子從父之教，從夫之命，故曰如。」姑，故也，言尊如故也。又謂之威。徐鍇曰：「土盛於戌。土，陰之主也。故字從戌。」 《漢律》曰：「婦告威姑。」是也。姊，谘也。以其先生，言可谘問。《說文》云：「妹，女弟也。」又謂之胃。妾，接也。鄭注《禮記》云：「聞彼有禮，走而往焉，以得接見於君子也。庶母者，父之妾也。」此皆同宗之族也。《白虎通》云：「宗者何謂也？宗者尊也，為先祖主也。宗，人之所尊也。《禮記》曰：宗人將有事，族人皆侍。侍所以必有宗，何也？所以長和睦也。族者何也？族者湊也，聚也。謂恩愛相流湊，生相親愛，死相哀痛，有會聚之道，故謂之族也。」注「禮記」 至「此例也」。○釋曰：雲「《禮記》曰：生曰父、母、妻，死曰考、妣、嬪」者，《曲禮下》篇文也。雲「今世學者從之」者，謂從《禮記》，以父、母、妻為生之稱，以考、妣、嬪為死之稱。彼乃記者一家之說爾，學者膠柱，遂為生死定稱，非也。故郭氏引諸文以證之。雲「《尚書》曰：大傷厥考心」，《康誥》文也。雲「事厥考厥長」、「聰聽祖考之彝訓」者，皆《酒誥》文也。雲「如喪考妣」者，《舜典》文也。此皆生稱考妣也。雲「《公羊傳》曰：「惠公者何？隱之考也。仲子者何？桓之母也」者，隱元年傳文也。此即死稱母也。雲「《蒼頡篇》曰：考妣延年」者，此亦生稱考妣也。雲「《書》曰：嬪於虞」者，《堯典》文也。雲「《詩》曰：聿嬪於京」，《大雅· 大明》篇文也。雲「《周禮》有九嬪之官」者，屬天官掌婦學之法者也。此皆生稱嬪者也。雲「明此非死生之異稱矣」者，所以破先儒之說也。雲「其義猶今謂兄為晜、妹為胃，即是此例也」者，舉類以曉人也。
+		</region>
+	</paragraph>
+	<paragraph index="4">
+		<region typus="comment" subtype="注_prefix" id="2584" explains="">
+【注】「從祖而別世統異故」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2585" explains="2557">
+○釋曰：解所以稱從之理也。從祖而別，繼世分宗，其統各異，故曰從祖。
+		</region>
+	</paragraph>
+	<paragraph index="5">
+		<region typus="comment" subtype="注_prefix" id="2587" explains="">
+【注】「世有為嫡
+		</region>
+		<region typus="comment" subtype="注_body" id="2588" explains="2559">
+者，嗣世統故也」。○釋曰：解所以稱世之義也。繼世以嫡長，先生於父則繼者也，故曰世父。《說文》叔作未，許慎曰：「從上小。」言尊行之小也。
+		</region>
+	</paragraph>
+	<paragraph index="6">
+		<region typus="comment" subtype="注_prefix" id="2589" explains="">
+【注】 「同姓之親無服屬」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2590" explains="2561">
+○釋曰：《禮記·大傳》云：「親者屬也。」鄭注云：「有親者服，名以其屬親疏。」此經言親同姓者，謂五世之外，比諸同姓猶親，但無服屬爾。
+		</region>
+	</paragraph>
+	<paragraph index="7">
+		<region typus="comment" subtype="注_prefix" id="2592" explains="">
+【注】「孫猶後也」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2593" explains="2565">
+○釋曰：言繼後嗣也。《廣雅》云：「孫，順也。」許慎云：「從子從係。」係，續也。言順續也，言順續先祖之後也。
+		</region>
+	</paragraph>
+	<paragraph index="8">
+		<region typus="comment" subtype="注_prefix" id="2595" explains="">
+【注】「玄者言親屬微昧也」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2596" explains="2569">
+○釋曰：玄者，緅緇之間色，色之微昧者也。親屬微昧，故曰玄孫。
+		</region>
+	</paragraph>
+	<paragraph index="9">
+		<region typus="comment" subtype="注_prefix" id="2598" explains="">
+【注】「晜，後也。《汲塚竹書》曰：不窋之晜孫」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2599" explains="2573">
+○釋曰：「晜，後也」，《釋言》文。《朿晳傳》曰：「大康元年，汲郡民盜發魏安釐王塚，得竹書漆字科鬥之文。」科鬥文者，周時古文也。其字頭粗尾細，似科鬥之蟲，故俗名之焉。不窋，後稷之子也。晜孫，謂毀榆也。
+		</region>
+	</paragraph>
+	<paragraph index="10">
+		<region typus="original" subtype="" id="2600" explains="">
+母之考為外王父，母之妣為外王母。母之王考為外曾王父，母之王妣為外曾王母。
+		</region>
+		<region typus="comment" subtype="" id="2601" explains="2600">
+異姓，故言外。
+		</region>
+		<region typus="original" subtype="" id="2602" explains="">
+母之晜弟為舅，母之從父晜弟為從舅，母之姊妹為從母。從母之男子為從母晜弟，其女子子為從母姊妹。○母黨。
+		</region>
+	</paragraph>
+	<paragraph index="11">
+		<region typus="comment" subtype="疏_prefix" id="2603" explains="">
+【疏】「母之」至「母黨」。
+		</region>
+		<region typus="comment" subtype="疏_body" id="2604" explains="2600,2602">
+○釋曰：此一節別母之族黨也。黨是鄉之細也。此外族屬母，若黨之屬鄉，故云母黨。雲舅者，孫炎云：「舅之言舊，尊長之稱。」《詩·秦風》云：「我送舅氏，曰至渭陽。」是也。
+		</region>
+	</paragraph>
+	<paragraph index="12">
+		<region typus="original" subtype="" id="2605" explains="">
+妻之父為外舅，妻之母為外姑。
+		</region>
+		<region typus="comment" subtype="" id="2606" explains="2605">
+謂我舅者，吾謂之甥。然則亦宜呼婿為甥。《孟子》曰：「帝館甥於二室。」是。
+		</region>
+		<region typus="original" subtype="" id="2607" explains="">
+姑之子為甥，舅之子為甥，妻之晜弟為甥，姊妹之夫為甥。
+		</region>
+		<region typus="comment" subtype="" id="2608" explains="2607">
+四人體敵，故更相為甥。甥猶生也。今人相呼皆依此。
+		</region>
+		<region typus="original" subtype="" id="2609" explains="">
+妻之姊妹同出為姨。
+		</region>
+		<region typus="comment" subtype="" id="2610" explains="2609">
+同出謂俱已嫁。《詩》曰：「邢侯之姨。」
+		</region>
+		<region typus="original" subtype="" id="2611" explains="">
+女子謂姊妹之夫為私。
+		</region>
+		<region typus="comment" subtype="" id="2612" explains="2611">
+《詩》曰：「譚公維私。」
+		</region>
+		<region typus="original" subtype="" id="2613" explains="">
+男子謂姊妹之子為出。
+		</region>
+		<region typus="comment" subtype="" id="2614" explains="2613">
+《公羊傳》曰：「蓋舅出。」
+		</region>
+		<region typus="original" subtype="" id="2615" explains="">
+女子謂晜弟之子為侄，
+		</region>
+		<region typus="comment" subtype="" id="2616" explains="2615">
+《左傳》曰：「侄其從姑。」
+		</region>
+		<region typus="original" subtype="" id="2617" explains="">
+謂出之子為離孫，謂侄之子為歸孫，女子子之子為外孫。女子同出，謂先生為姒，後生為娣。
+		</region>
+		<region typus="comment" subtype="" id="2618" explains="2617">
+同出謂俱嫁事一夫。《公羊傳》曰：「諸侯娶一國，二國往媵之，以侄娣從。娣者何？弟也。」此即其義也。
+		</region>
+		<region typus="original" subtype="" id="2619" explains="">
+女子謂兄之妻為嫂，弟之妻為婦。
+		</region>
+		<region typus="comment" subtype="" id="2620" explains="2619">
+猶今言新婦是也。
+		</region>
+		<region typus="original" subtype="" id="2621" explains="">
+長婦謂稚婦為娣婦，娣婦謂長婦為姒婦。
+		</region>
+		<region typus="comment" subtype="" id="2622" explains="2621">
+今相呼先後，或云妯娌。○ 侄，徒結反。姒音似。娣音第。
+		</region>
+		<region typus="original" subtype="" id="2623" explains="">
+妻黨。
+		</region>
+		<region typus="comment" subtype="" id="2626" explains="2605,2606,2607,2608,2609,2610,2611,2612,2613,2614,2615,2616,2617,2618,2619,2620,2621,2622,2623">
+○
+		</region>
+	</paragraph>
+	<paragraph index="13">
+		<region typus="comment" subtype="疏_prefix" id="2624" explains="">
+【疏】「妻之」至「妻黨」。
+		</region>
+		<region typus="comment" subtype="疏_body" id="2625" explains="2605,2607,2609,2611,2613,2615,2617,2619,2621,2623">
+○釋曰：此一節別妻之親黨也。《內則》云：「聘則為妻。」《白虎通》云：「妻者齊也，與夫齊體。自天子下至庶人，其義一也。」
+		</region>
+	</paragraph>
+	<paragraph index="14">
+		<region typus="comment" subtype="注_prefix" id="2627" explains="">
+【注】「《孟子》曰：帝館甥於二室」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2628" explains="2606">
+○釋曰：《孟子》云：「舜尚見帝，帝館甥於貳室。亦饗舜，迭為賓主，是天子而友匹夫也。」彼注云：「尚，上也。舜在畎&lt;畝又&gt;之時，堯友禮之。舜上見堯，舍之於貳室。貳室，副宮也。堯亦就饗舜之所設，更迭為賓主。《禮記》：『妻父曰外舅。』謂我舅者，吾謂之甥。堯以女妻舜，故謂堯甥。卒與之天位，是天子之友匹夫也。」
+		</region>
+	</paragraph>
+	<paragraph index="15">
+		<region typus="comment" subtype="注_prefix" id="2629" explains="">
+【注】「四人」至「依此」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2630" explains="2608">
+○釋曰：「四人」謂姑之子、舅之子、妻之晜弟、姊妹之夫，是也。此四人尊卑體敵，更相為甥。雲「甥猶生也」者，取相親之意也。
+		</region>
+	</paragraph>
+	<paragraph index="16">
+		<region typus="comment" subtype="注_prefix" id="2631" explains="">
+【注】「《詩》曰：邢侯之姨，譚公維私」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2632" explains="2610,2612">
+○釋曰：皆《衛風·碩人》篇文也。孫炎曰：「私，無正親之言。」然則謂吾姨者，我謂之私。邢侯譚公，皆莊薑姊妹之夫。互言之耳。《春秋》「譚子奔莒」，則譚是子爵。言公者，蓋依臣子稱便文耳。
+		</region>
+	</paragraph>
+	<paragraph index="17">
+		<region typus="comment" subtype="注_prefix" id="2633" explains="">
+【注】「《公羊傳》曰：蓋舅出」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2634" explains="2614">
+○釋曰：案《春秋》襄五年「夏，叔孫豹、鄫世子巫如晉」。《公羊傳》曰：「外相如不書，此何以書？為叔孫豹率而與之俱也。叔孫豹則曷為率而與之俱？蓋舅出也。」何休云：「巫者，鄫前夫人襄公母姊妹之子也，俱莒外孫，故曰舅出。」是也。
+		</region>
+	</paragraph>
+	<paragraph index="18">
+		<region typus="comment" subtype="注_prefix" id="2635" explains="">
+【注】「《左傳》曰：侄其從姑」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2636" explains="2616">
+○釋曰：案僖十五年傳云：初，晉獻公筮嫁伯姬於秦，遇「歸妹」之「睽」。史蘇占之曰：「不吉。其繇曰：『侄其從姑。』杜注云：「震為木，離為火，火從木生離為震，妹於火為姑。謂我侄者，我謂之姑。謂子圉質秦。」是也。
+		</region>
+	</paragraph>
+	<paragraph index="19">
+		<region typus="comment" subtype="注_prefix" id="2637" explains="">
+【注】「公羊」至「弟也」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2638" explains="2614,2616,2618">
+○釋曰：《春秋》莊十九年「秋，公子結媵陳人之婦於鄄，遂及齊侯、宋公盟」。《公羊傳》曰：「媵者何？諸侯娶一國，則二國往媵之，以侄娣從。侄者何？兄之子也。娣者何？弟也。諸侯壹聘九女，諸侯不再娶。」何休云：「必以侄娣從之者，欲使一人有子，二人喜也。所以妨嫉，令重繼也。因以備尊尊親親也。九者，極陽數也。不再娶者，所以節人情開媵路。」
+		</region>
+	</paragraph>
+	<paragraph index="20">
+		<region typus="comment" subtype="注_prefix" id="2639" explains="">
+【注】「猶今言新婦是也」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2640" explains="2620">
+○釋曰：《儀禮·喪服傳》云：「夫之晜弟，何以無服也？其夫屬乎婦道者，妻皆母道也。其夫屬乎子道者，妻皆婦道也。謂弟之妻婦者，是嫂亦可謂之母乎？故名者，人治之大者也。可無慎乎？」鄭注云：「道猶行也。言婦棄姓，無常秩，嫁於父行則為母行，嫁於子行則為婦行，謂弟之妻為婦者，卑遠之，故謂之婦。嫂者，尊嚴之稱，是嫂亦可謂之母乎？嫂猶叟也，叟，老人稱也，是為敘男女之別爾。若已以母婦之服服兄弟之妻，兄弟之妻以舅子之服服已，則是亂昭穆之敘也。治猶理也。父母兄弟夫婦之理，人倫之大者，可不慎乎！」《大傳》曰：「同姓從宗，合族屬；異姓主名，治際會。名著而男女有別。」是別嫂婦之名也。郭雲「猶今言新婦」者，以時驗而知也。至今猶然。
+		</region>
+	</paragraph>
+	<paragraph index="21">
+		<region typus="comment" subtype="注_prefix" id="2641" explains="">
+【注】「今相呼先後，或云妯娌」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2642" explains="2622">
+○釋曰：《廣雅》云：「娣姒妯娌。娣姒，先後也。」世人多疑娣姒之名，皆以為兄妻呼弟妻為娣，弟妻呼兄妻為姒，因即惑於斯文，不知何以為說。今謂母婦之號，隨夫尊卑。娣姒之名，從身長幼，以其俱來夫族，其夫班秩，既同尊卑，無以相加，遂從身之少長。《喪服·小功章》曰：「娣姒婦報。傳曰：娣姒婦者，弟長也。」以弟長解娣姒，言娣是弟，姒是長也。《公羊傳》亦云：「娣者何？弟也。」是其以弟解娣，自然以長解姒。長謂身之年長，非夫之年長也。此雲「長婦謂稚婦為娣婦，娣婦謂長婦為姒婦」者，止言婦之長稚，不言夫之大小。《左傳》成十一年，穆薑謂聲伯之母為姒；昭二十八年傳，叔向之嫂謂叔向之妻為姒。二者皆呼夫弟之妻為姒，豈計夫之長幼乎？上雲「女子同出，謂先生為姒，後生為娣」。郭云：「同出謂俱嫁事一夫」也。事一夫者，以己生先後為娣姒，則知娣姒以已之年，非夫之年也。故賈逵、鄭玄及杜預皆云兄弟之妻相謂為姒，言兩人相謂，長者為姒，知娣姒之名不計夫之長幼也。
+		</region>
+	</paragraph>
+	<paragraph index="22">
+		<region typus="original" subtype="" id="2643" explains="">
+婦稱夫之父曰舅，稱夫之母曰姑。姑舅在，則曰君舅、君姑；沒，則曰先舅、先姑。
+		</region>
+		<region typus="comment" subtype="" id="2644" explains="2643">
+《國語》曰：「吾聞之先姑。」
+		</region>
+		<region typus="original" subtype="" id="2645" explains="">
+謂夫之庶母為少姑，夫之兄為兄公，
+		</region>
+		<region typus="comment" subtype="" id="2646" explains="2645">
+今俗呼兄鍾，語之轉耳。
+		</region>
+		<region typus="original" subtype="" id="2647" explains="">
+夫之弟為叔，夫之姊為女公，夫之女弟為女妹。
+		</region>
+		<region typus="comment" subtype="" id="2648" explains="2647">
+今謂之女妹是也。
+		</region>
+		<region typus="original" subtype="" id="2649" explains="">
+子之妻為婦，長婦為嫡婦，眾婦為庶婦。女子子之夫為壻。壻之父為姻，婦之父為婚。父之黨為宗族，母與妻之黨為兄弟。父之父母、壻之父母相謂為婚姻。兩壻相謂為亞。
+		</region>
+		<region typus="comment" subtype="" id="2650" explains="2649">
+《詩》曰：「瑣瑣姻亞。」今江東人呼同門為僚壻。
+		</region>
+		<region typus="original" subtype="" id="2651" explains="">
+婦之黨為婚兄弟，壻之黨為姻兄弟。
+		</region>
+		<region typus="comment" subtype="" id="2652" explains="2651">
+古者皆謂婚姻為兄弟。
+		</region>
+		<region typus="original" subtype="" id="2653" explains="">
+嬪，婦也。
+		</region>
+		<region typus="comment" subtype="" id="2654" explains="2653">
+《書》曰：「嬪於虞。」
+		</region>
+		<region typus="original" subtype="" id="2655" explains="">
+謂我舅者，吾謂之甥也。
+		</region>
+		<region typus="comment" subtype="" id="2656" explains="2655">
+○公音鍾。嫡音的。嬪音頻。
+		</region>
+		<region typus="original" subtype="" id="2657" explains="">
+婚姻。
+		</region>
+	</paragraph>
+	<paragraph index="23">
+		<region typus="comment" subtype="疏_prefix" id="2658" explains="">
+【疏】「婦稱」至「婚姻」。
+		</region>
+		<region typus="comment" subtype="疏_body" id="2659" explains="2643,2645,2647,2649,2651,2653,2655,2657">
+○釋曰：此別夫婦婚姻之名也。《說文》云：「婦，服也。從女持帚灑掃也。」《白虎通》云：「夫婦者何謂也？夫者扶也，以道扶接。婦者服也，以禮屈服。」「謂之舅姑者何？舅者舊也。姑者故也。舊、故，老人稱也。夫之父母謂舅姑何？尊如父而非父者舅也，親如母而非母者姑也。」鄭注《喪服傳》云：「女子子者，子女也，別於男子也。」《說文》云：「壻，女之夫也。從士從胥。」聞一知十為士。胥者，有才知之稱。故謂女之夫為壻。《廣雅》云：「壻謂之倩。」《方言》云：「東齊之間，壻謂之倩。」《白虎通》云：「婚姻者何謂？昏時行禮，故曰婚。婦人因夫而成，故曰姻。」
+		</region>
+	</paragraph>
+	<paragraph index="24">
+		<region typus="comment" subtype="注_prefix" id="2660" explains="">
+【注】「《國語》曰：吾聞之先姑」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2661" explains="2644">
+○釋曰：《魯語》：季康子問於公文伯之母曰：「主亦有以語肥也。」對曰：「吾能老而已，何以語子？」康子曰：「雖然，肥原有聞於主。」對曰： 「吾聞諸先姑曰：『君子能勞，後世有繼。』」子夏聞之曰：「善哉！商聞之曰：『古之嫁者，不及舅、姑，謂之不幸。』夫婦，學於舅姑者也。」是矣。注 「《詩》曰：瑣瑣姻亞」。○釋曰：《小雅·節南山》文也。劉熙《釋名》云：「『兩壻相謂為亞』者，言每一人取姊，一人取妹，相亞次也。又並來女氏，則姊夫在前，妹夫在後，亦相亞也。」
+		</region>
+	</paragraph>
+	<paragraph index="25">
+		<region typus="comment" subtype="注_prefix" id="2662" explains="">
+【注】「古者皆謂婚姻為兄弟」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2663" explains="2652">
+○釋曰：《禮記》：「曾子問曰：『昏禮既納幣，有吉日，女之父母死，則如之何？』孔子曰：『壻使人吊，如壻之父母死，則女之家亦使人吊。』」鄭注云：「必使人吊者，未成兄弟。」又云：「父喪稱父，母喪稱母，父母不在，則稱伯父、世母。壻已葬，壻之伯父致命女氏曰：『某之子有父母之喪，不得嗣為兄弟，使某致命。』女氏許諾而弗敢嫁，禮也。」是古者謂昏姻為兄弟，以夫婦有兄弟之義。或據壻於妻之父母有緦服，故得謂之兄弟也。
+		</region>
+	</paragraph>
+	<paragraph index="26">
+		<region typus="comment" subtype="注_prefix" id="2664" explains="">
+【注】「《書》曰：嬪於虞」。
+		</region>
+		<region typus="comment" subtype="注_body" id="2665" explains="2654">
+○釋曰：案《堯典》：群臣共舉舜於帝，「帝曰：『我其試哉！女於時，觀厥刑於二女。』釐降二女於媯汭，嬪於虞。」孔安國注云：「降，下。嬪，婦也。舜為匹夫，能以義理下帝女之心於所居媯水之汭，使行婦道於虞氏。」是也。
+		</region>
+	</paragraph>
+</text>

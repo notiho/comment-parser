@@ -1,0 +1,227 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>大藏經編纂及電腦化研討會論文特集</title>
+  <link rel="stylesheet" type="text/css" href="../cbeta.css" />
+</head>
+<body>
+<div id='body'>
+
+<div class='div-other'><a id='mulu12' />
+<p class='h1'>關於製作大藏經電子文庫的工程技術方案</p><p class="byline">中國綜合開發研究院古籍電子化課題組</p>
+<div class='div-other'><a id='mulu13' />
+<p class='h2'>概述</p><p style="margin-left:0em;text-indent:2em">將古代典籍錄入電子計算機，採用光盤、磁盤等介質加以儲存，是現代科技提供的一個優越的技術手段，可以大大提高典籍文獻的查詢檢索速度，提高資料使用效率，簡化資料的收藏保管工作。對於<span class='corr'>像</span>中文大藏經這樣篇幅繁浩、流傳久遠、版本眾多、思想文化價值極高的大型典籍，尤其需要借助電子計算機這一現代化的技術手段來整理和存儲。</p>
+<p style="margin-left:0em;text-indent:2em">製作中文大藏經電子文庫，是工作量很浩大的一項系統工程，大致要經過版本搜集、文字整理、軟件開發、人員培訓、器材採購、數據圖形錄入、後期製作測試和出版發行等工作環節。不僅要解決技術問題，還要進行大量的編輯、錄入、校對等工作，需要將文獻專家、文字編輯人員、系統管理專家、計算機工程技術人員、錄入校對人員等，組織在一起，通力合作，要有較長期工作的心理準備。</p>
+<p style="margin-left:0em;text-indent:2em">總之，此項工作首先是一項功在歷史、利在大眾的文化事業。同時，從純投資的角度來考察，又是一項工程週期長，投入強度大，不好計較短近收益，但類似於水庫電站工程那樣的可以長久受益的項目。</p>
+</div>
+<div class='div-other'><a id='mulu14' />
+<p class='h2'>一、文庫集成</p><p style="margin-left:0em;text-indent:2em">藏經是佛教典籍的總稱，成書的時間跨度大，撰寫、抄錄、翻譯的人員多，經歷長期的歷史變遷，形成眾多的版本。載體有木板、碑刻本、手抄本、木刻板等。製作大藏經電子文庫應該不拘泥於某一個既成版本，儘可能將各種版本搜集齊全，進行必要的勘校整理，同時還收進晚近佛學新的思想成果，成為一個超越歷史版本的新集合，成為一個可以不斷擴充的開放系統。</p>
+<p style="margin-left:0em;text-indent:2em">在工程目標上，要訂一個階段工作目標和工程方案，分期分批錄入計算機。並建立統一的目錄索引，以便今後查找和使用。我們這裡先考慮按一個兩年期的首期工作目標來設計。</p>
+</div>
+<div class='div-other'><a id='mulu15' />
+<p class='h2'>二、文字整理</p><p style="margin-left:0em;text-indent:2em">文字整理要結合電子出版物的特點，把那些意義完全相同的異體字、錯筆字等進行歸一處理，以減少編碼和錄入方面的麻煩（在必要時，還可以配合圖形存儲方式來完整反映原文原貌）。這項工作學術性很強，需要慎重對待，但又不能在枝節問題上糾纏不清，以免影響後續工作的開展。</p>
+</div>
+<div class='div-other'><a id='mulu16' />
+<p class='h2'>三、軟件開發</p><p style="margin-left:0em;text-indent:2em">製作大藏經電子文庫，沒有完整現成的軟件可供使用，需要組織力量進行開發。涉及的主要技術問題包括字符認定編碼、錄入方法載入、字形製作、文本管理、排版、圖形製作、多種查詢檢索、顯示打印等，下面重點就技術方案進行討論。</p>
+<p style="margin-left:0em;text-indent:2em">1.中文平臺</p>
+<p style="margin-left:0em;text-indent:2em">作為一個電子出版物，應該具備在多種軟、硬件平臺上使用的性能，纔可能獲得廣泛的應用。由於電子版大藏經的使用對象主要是國內外研究人員、佛教僧俗學者、出版機構、圖書館等，所以首先要考慮在各種流行的PC機和網絡上使用，如DOS，WINDOWS，MAC OS，UNIX等。中文環境要能支持較大的漢字字符集，並具備相應的中文輸入方法和打印字庫。佛經典籍主要是用繁體字寫成的，其中也包括個別現在使用的簡體字，冷僻字比較多，平臺上應該有較大的補字空間。同時，還要考慮國際文化交流的需要，因此，應採用ISO-10646編碼標準。ISO-10646是一個多語種的計算機國際標準編碼體系，其正則方式的編碼容量超過一千六百萬字符，在基本平面上已定義20902個漢字（被稱為CJK字符集），並正在醞釀再增九千字左右。在基本平面上若不考慮其它語種，還可以有三萬字以上的補字空間。這是一個得到各國承認，有廣泛發展前途的編碼體系。世界各主要計算機公司正陸續宣佈其產品支持ISO-10646或Unicode（二者在基本平面上對齊）。例如，微軟公司的Windows95的中文版已於3月中旬發表，這是一個32位中文操作系統，可以支持Unicode中的CJK中文字符集，並有相應的輸入法和字形。但是，Windows95要求機檔高，設備投資及消耗件將成倍增加，且錄入顯示速度慢，輸入方法（鄭碼）的重碼率也較高。基於以上原因，在錄入工作階段，宜自行開發一個專門為錄入工作設計的DOS版本的中文平臺和字處理器。中文編碼應支持ISO-10646，採用全雙字節方式，能完成基本的錄入編輯工作，同時，又能產生與中文版Windows95和其它產品平臺上的CJK編碼一致的文本、文件。</p>
+<p style="margin-left:0em;text-indent:2em">2.輸入方法</p>
+<p style="margin-left:0em;text-indent:2em">首先要求能支持CJK大字符集，且易學、速度快，目前可選的祇有鄭碼和倉頡兩種。由於使用倉頡基本不用付費（作者放棄版權），重碼率也很低，易學易用，故在製作期間可以不考慮費用。將來在最終出版物產品上使用倉頡碼和拼音，以減少銷售成本。</p>
+<p style="margin-left:0em;text-indent:2em">3.字形製作</p>
+<p style="margin-left:0em;text-indent:2em">在DOS版專用平台上，顯示用字採取點陣字，因為繁體字筆畫較多，故以採用24×24點陣表達較為清楚。打印字庫則要採用三次曲線字。</p>
+<p style="margin-left:0em;text-indent:2em">補字是一個工作量較大的工作，在錄入正文時，會不斷發現原有字符集未收錄的冷僻字。對這些字，要按照相同的編碼方式，在專門平臺和產品平臺上增補字庫。既要補點陣字，也要補Truetype字，還要補三次曲線字。</p>
+<p style="margin-left:0em;text-indent:2em">4.文本管理</p>
+<p style="margin-left:0em;text-indent:2em">文本管理有兩方面的需要。一是在錄入製作期間，要有一、二個適用的文本管理軟件對錄入的數據進行管理和處理。二是在製成品（光盤）上，有一個閱讀器，能方便地閱讀光盤的任何部分，可以打印輸出。在同一界面下，還能進行查詢、檢索等處理。</p>
+<p style="margin-left:0em;text-indent:2em">5.查詢、檢索</p>
+<p style="margin-left:0em;text-indent:2em">用於中文全文檢索的軟件已有五、六種之多，但還未有針對CJK字符的專用產品，對於海量文本的處理也未盡如人意。檢索查詢及統計功能對於電子版的書籍是必不可少的功能，對此我們已有相當的技術準備，可以開發出與整個產品緊密結合的專用檢索軟件。</p>
+<p style="margin-left:0em;text-indent:2em">6.排版</p>
+<p style="margin-left:0em;text-indent:2em">大藏經的版式，可搞成橫排和豎排兩種版本。數據錄入校對完畢之後，除去製作光盤產品，還可以交出版社印製分冊成書，供寺院作法物流通之用。</p>
+<p style="margin-left:0em;text-indent:2em">7.多媒體功能</p>
+<p style="margin-left:0em;text-indent:2em">由於每張光盤有近600M的存儲容量，除了文本內容外，還可以加入圖片、聲音等信息，如讀音、照片等。採用多媒體技術，可以豐富電子版圖書表達的內容，充分發揮電子計算機的優越性。</p>
+</div>
+<div class='div-other'><a id='mulu17' />
+<p class='h2'>四、人員培訓</p><p style="margin-left:0em;text-indent:2em">參與錄入階段工作的編輯、打字、校對人員需要百餘人。所有人員必須具備相當的文字知識，特別是對異體字有相當瞭解，打字人員還要學會倉頡輸入法。這樣的人員祇能通過招募培訓的方式解決。新進人員首先要有不少於一個月的培訓期，待其在打字錄入方面能盲打並達到30字/分的速度以上纔能上崗。至於文字知識，則需定期培訓。考慮到人員合理的流動，培訓工作必須是連續不斷的，並有專職人員負責。</p>
+</div>
+<div class='div-other'><a id='mulu18' />
+<p class='h2'>五、數據整理、後期加工製作、測試</p><p style="margin-left:0em;text-indent:2em">文字、圖形、聲音等各種資料錄入之後，要進行必要的處理，壓縮存儲，搭配必要的軟件，刻入光盤，然後還要進行比較全面的測試、修改，以保證電子文庫大藏經的質量和可靠性。</p>
+</div>
+<div class='div-other'><a id='mulu19' />
+<p class='h2'>六、時間安排</p><p style="margin-left:0em;text-indent:2em">初步安排為兩年時間，列表如下：</p>
+
+<table>
+<tr><td>階段</td>
+<td>時間</td>
+<td>內容</td>
+</tr>
+<tr><td>1.籌備階段</td>
+<td>3個月</td>
+<td>人員招聘、培訓、專用平臺軟件的完善、器材採購、版本搜集、整理；</td>
+</tr>
+<tr><td>2.初步運作</td>
+<td>6個月</td>
+<td>文字整理、錄入、校對全面展開；</td>
+</tr>
+<tr><td>3.密集運作</td>
+<td>12個月</td>
+<td>同上，人員增加到120人；</td>
+</tr>
+<tr><td>4.後期製作</td>
+<td>3個月</td>
+<td>上文所述第五項工作。</td>
+</tr></table></div>
+<div class='div-other'><a id='mulu20' />
+<p class='h2'>七、費用概算</p>
+<table>
+<tr><td/>
+<td>單位：萬元</td>
+</tr>
+<tr><td>1.設備費</td>
+<td>199.08萬</td>
+</tr>
+<tr><td>2.耗材</td>
+<td>10萬</td>
+</tr>
+<tr><td>3.軟件費</td>
+<td>55萬</td>
+</tr>
+<tr><td>4.專家費</td>
+<td>10萬</td>
+</tr>
+<tr><td>5.人工費（錄入＋8校）</td>
+<td>250萬</td>
+</tr>
+<tr><td>6.場地費</td>
+<td>60萬</td>
+</tr>
+<tr><td>7.培訓費</td>
+<td>4萬</td>
+</tr>
+<tr><td>8.管理費（按人工費15%計算）</td>
+<td>37.5萬</td>
+</tr>
+<tr><td>9.技術支持費用（每年）</td>
+<td>10萬</td>
+</tr>
+<tr><td>10.後期製作費</td>
+<td>10萬</td>
+</tr>
+<tr><td>11.機房費用、水電費用</td>
+<td>20萬</td>
+</tr>
+<tr><td>合計：</td>
+<td>686.58萬</td>
+</tr></table><p style="margin-left:0em;text-indent:2em">其中設備清單：</p>
+
+<table>
+<tr><td>錄入用微機</td>
+<td>60臺</td>
+<td>單價0.8萬</td>
+<td>48萬</td>
+</tr>
+<tr><td><span class="corr">開</span>發數據處理用微機</td>
+<td>10臺</td>
+<td>單價1.1萬</td>
+<td>11萬</td>
+</tr>
+<tr><td>針式打印機</td>
+<td>10臺</td>
+<td>單價0.4萬</td>
+<td>4萬</td>
+</tr>
+<tr><td>激光打印機</td>
+<td>5臺</td>
+<td>單價1.1萬</td>
+<td>5.5萬</td>
+</tr>
+<tr><td>複印機</td>
+<td>4臺</td>
+<td>單價2.2萬</td>
+<td>8.8萬</td>
+</tr>
+<tr><td>UPS</td>
+<td>80臺</td>
+<td>單價0.1萬</td>
+<td>8萬</td>
+</tr>
+<tr><td>服務器</td>
+<td>2臺</td>
+<td>單價7.6萬</td>
+<td>15.2萬</td>
+</tr>
+<tr><td>RRAID</td>
+<td>2臺</td>
+<td>單價8萬</td>
+<td>16萬</td>
+</tr>
+<tr><td>刻盤機</td>
+<td>1臺</td>
+<td>單價10萬</td>
+<td>10萬</td>
+</tr>
+<tr><td>網絡設備</td>
+<td/>
+<td/>
+<td>11萬</td>
+</tr>
+<tr><td>掃瞄儀</td>
+<td>2臺</td>
+<td>單價0.85萬</td>
+<td>1.7萬</td>
+</tr>
+<tr><td>錄音設備</td>
+<td>1套</td>
+<td>單價3.3萬</td>
+<td>3.3萬</td>
+</tr>
+<tr><td>合計</td>
+<td/>
+<td/>
+<td>142.2萬元</td>
+</tr>
+<tr><td>每年20%的維修費合計：</td>
+<td/>
+<td/>
+<td>56.88萬元</td>
+</tr>
+<tr><td>共計：</td>
+<td/>
+<td/>
+<td>199.08萬元</td>
+</tr></table><p style="margin-left:0em;text-indent:2em">其中軟件清單：</p>
+
+<table>
+<tr><td>系統軟件</td>
+<td>10萬元</td>
+</tr>
+<tr><td>中文平臺及字處理：</td>
+<td>5萬</td>
+</tr>
+<tr><td>字庫</td>
+<td>20萬</td>
+</tr>
+<tr><td>全文檢索</td>
+<td>5萬</td>
+</tr>
+<tr><td>排版</td>
+<td>5萬</td>
+</tr>
+<tr><td>工具軟件</td>
+<td>5萬</td>
+</tr>
+<tr><td>其它</td>
+<td>5萬</td>
+</tr>
+<tr><td>合計</td>
+<td>55萬</td>
+</tr></table></div>
+<div class='div-other'><a id='mulu21' />
+<p class='h2'>八、目前已完成的工作</p><p style="margin-left:0em;text-indent:2em">中國綜合開發研究院古藉電子化課題組自1992年起，一直致力於古籍電子化的開發研究工作，目前已經積累了一批成果。在軟件方面主要有：</p>
+<p style="margin-left:0em;text-indent:2em">1.平臺開發，在PC機上開發了支持全雙字節編碼方式的中文環境，顯示方式為SVGA，1024×768分辨率，使用24點陣顯示字，支持CJK字符集，可增補字。</p>
+<p style="margin-left:0em;text-indent:2em">2.輸入法，根據倉頡碼的編碼原理擴充了倉頡輸入法，支持CJK字符集的全部字符。</p>
+<p style="margin-left:0em;text-indent:2em">3.字處理器，開發了在中文平臺上全雙字節編碼方式的字處理器，可以完成大藏經文本錄入的全部工作，支持海量文本，在其上便於發展功能較強的檢索工具。</p>
+<p style="margin-left:0em;text-indent:2em">4.字形，已形成了CJK字符集的顯示字庫、打印字庫的字形製作。</p>
+<p style="margin-left:0em;text-indent:2em">5.全文檢索，已開發全文檢索軟件一套，經移植可用於ISO-10646體系。</p>
+<p style="margin-left:0em;text-indent:2em">更為重要的是，經過多年來堅持不懈的工作，集合了一批在古籍電子化方面學有專長的專家，可以在製作電子版大藏經的工作中發揮骨幹作用。</p>
+</div></div>
+</div><!-- end of div[@id='body'] -->
+</body></html>

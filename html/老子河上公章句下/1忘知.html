@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>老子河上公章句下 忘知</title>
+    
+    <style>
+        :root {
+            --gloss-color: rgb(255, 255, 100);
+            --gloss-color-highlighted: rgb(255, 255, 50);
+            --glossed-color: rgb(150, 255, 100);
+            --glossed-color-highlighted: rgb(100, 255, 50);
+            --highlighted-color: rgba(0, 255, 0, 0.1);
+        }
+        
+        .container {
+            display: flex;
+            margin: 2em;
+        }   
+
+        .column-left {
+            flex: 70%;
+            margin: 4em;
+        }
+        
+        .column-right {
+            flex: 30%;
+            margin: 4em;
+        }
+        
+        #metadata-column {
+            position: sticky;
+            align-self: flex-start;
+            top: 2em;
+            padding: 1em;
+            font-size: x-large;
+            border-style: double;
+            border-size: 2px;
+        }
+        
+        .comment,.summary {
+            font-size: x-large;
+        }
+        
+        .original {
+            font-size: xx-large;
+        }
+        
+        .疏_prefix,.注_prefix {
+            color: grey;
+        }
+        
+        .active-span {
+            background-color: var(--highlighted-color);
+        }
+        
+        .gloss {
+            background-color: var(--gloss-color);
+        }
+        
+        .active-span > .gloss {
+            background-color: var(--gloss-color-highlighted);
+        }
+        
+        .glossed {
+            background-color: var(--glossed-color);
+        }
+        
+        .active-span > .glossed {
+            background-color: var(--glossed-color-highlighted);
+        }
+        
+        .gloss.glossed {
+            background-image: repeating-linear-gradient(45deg, var(--gloss-color) 0 3pt, var(--glossed-color) 3pt 6pt);
+        }
+    </style>
+</head>
+
+<body>
+    
+    
+    <div class="container">
+        <div class="column-left">
+            <h2>老子河上公章句下 忘知</h2>
+            <p><span class="original title" id="1167"> 老子河上公章句下 忘知 </span></p><p><span class="original " id="1168"> 為<span class=" glossed">學日益</span>， </span></p><p><span class="comment " id="1169"> <span class="gloss ">學謂政教禮樂之學也。日益者，情欲文飾日以益多。</span> </span></p><p><span class="original " id="1170"> 為<span class=" glossed">道日損</span>。 </span></p><p><span class="comment " id="1171"> <span class="gloss ">道謂之自然之道也。日損者，情欲文飾日以消損。</span> </span></p><p><span class="original " id="1172"> 損之又損， </span></p><p><span class="comment " id="1173"> 損情欲也。又損之，所以漸去。 </span></p><p><span class="original " id="1174"> 以至於無為， </span></p><p><span class="comment " id="1175"> 當恬淡如嬰兒，無所造為也。 </span></p><p><span class="original " id="1176"> 無為而無不為。 </span></p><p><span class="comment " id="1177"> 情欲斷絕，德於道合，則無所不施，無所不為也。 </span></p><p><span class="original " id="1178"> <span class=" glossed">取</span>天下常以無事， </span></p><p><span class="comment " id="1179"> <span class="gloss ">取，治也。</span>治天下當以無事，不當以勞煩也。 </span></p><p><span class="original " id="1180"> 及其有事，不足以取天下。 </span></p><p><span class="comment " id="1181"> 及其好有事，則政教煩，民不安，故不足以治天下也。 </span></p>
+        </div>
+        <div class="column-right" id="metadata-column">
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        
+        const metadata = {"1167": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Subtype: </span><span class=\"metadata\">t</span>\n</div>", "1168": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Glossed: </span><span class=\"metadata\">for '\u5b78': '\u5b78\u8b02\u653f\u6559\u79ae\u6a02\u4e4b\u5b78\u4e5f\u3002'; for '\u65e5\u76ca': '\u65e5\u76ca\u8005\uff0c\u60c5\u6b32\u6587\u98fe\u65e5\u4ee5\u76ca\u591a\u3002'</span>\n</div>", "1169": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u70ba\u5b78\u65e5\u76ca\uff0c'</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Glosses: </span><span class=\"metadata\">for '\u5b78': '\u5b78\u8b02\u653f\u6559\u79ae\u6a02\u4e4b\u5b78\u4e5f\u3002'; for '\u65e5\u76ca': '\u65e5\u76ca\u8005\uff0c\u60c5\u6b32\u6587\u98fe\u65e5\u4ee5\u76ca\u591a\u3002'</span>\n</div>", "1170": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Glossed: </span><span class=\"metadata\">for '\u9053': '\u9053\u8b02\u4e4b\u81ea\u7136\u4e4b\u9053\u4e5f\u3002'; for '\u65e5\u640d': '\u65e5\u640d\u8005\uff0c\u60c5\u6b32\u6587\u98fe\u65e5\u4ee5\u6d88\u640d\u3002'</span>\n</div>", "1171": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u70ba\u9053\u65e5\u640d\u3002'</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Glosses: </span><span class=\"metadata\">for '\u9053': '\u9053\u8b02\u4e4b\u81ea\u7136\u4e4b\u9053\u4e5f\u3002'; for '\u65e5\u640d': '\u65e5\u640d\u8005\uff0c\u60c5\u6b32\u6587\u98fe\u65e5\u4ee5\u6d88\u640d\u3002'</span>\n</div>", "1172": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "1173": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u640d\u4e4b\u53c8\u640d\uff0c'</span>\n</div>", "1174": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "1175": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u4ee5\u81f3\u65bc\u7121\u70ba\uff0c'</span>\n</div>", "1176": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "1177": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u7121\u70ba\u800c\u7121\u4e0d\u70ba\u3002'</span>\n</div>", "1178": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Glossed: </span><span class=\"metadata\">for '\u53d6': '\u53d6\uff0c\u6cbb\u4e5f\u3002'</span>\n</div>", "1179": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u53d6\u5929\u4e0b\u5e38\u4ee5\u7121\u4e8b\uff0c'</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Glosses: </span><span class=\"metadata\">for '\u53d6': '\u53d6\uff0c\u6cbb\u4e5f\u3002'</span>\n</div>", "1180": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">original</span>\n</div>", "1181": "<div class=\"metadata-line\">\n<span class=\"metadata-category\">Type: </span><span class=\"metadata\">comment</span>\n</div><div class=\"metadata-line\">\n<span class=\"metadata-category\">Explains: </span><span class=\"metadata\">'\u53ca\u5176\u6709\u4e8b\uff0c\u4e0d\u8db3\u4ee5\u53d6\u5929\u4e0b\u3002'</span>\n</div>"}
+        
+        window.addEventListener("mouseup", e => {
+            var elems = document.querySelectorAll(".active-span");
+            
+            [].forEach.call(elems, el => {
+                el.classList.remove("active-span");
+            });
+            
+            if (document.getSelection()) {
+                if (document.getSelection().anchorNode != null) {
+                    var elem = document.getSelection().anchorNode.parentElement;
+                    if (elem.classList.contains("gloss") || elem.classList.contains("glossed")) {
+                        elem = elem.parentElement;
+                    }
+                    const id = elem.id;
+                    if (id in metadata) {
+                        document.getElementById("metadata-column").innerHTML = metadata[id];
+                        document.getElementById(id).classList.add("active-span");
+                    }
+                }
+            }
+        });
+        
+    </script>
+</body>
+</html>
