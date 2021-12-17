@@ -150,6 +150,10 @@
             padding: 10pt;
             font-size: x-large;
         }
+        
+        #license-button-container {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -194,6 +198,10 @@
     <div id="body-container">
         <div id="glosses-column"></div>
         <div id="additional-info-column"></div>
+    </div>
+    
+    <div id="license-button-container">
+        <button id="license-button">Show license information</button>
     </div>
     
     <div id="overlay-container">
@@ -245,6 +253,7 @@
         const titleContainer = document.getElementById("title-container");
         const textContainer = document.getElementById("text-container");
         const randomButton = document.getElementById("random-button");
+        const licenseButton = document.getElementById("license-button");
         
         function displayTextOverlay(text_id, title, glossed, content, repetitions) {
             overlayContainer.style.display = "block";
@@ -454,6 +463,15 @@
             updateKangxi(gloss.glossed[0].value);
             queryInput.value = gloss.glossed[0].value;
         });
+        
+        licenseButton.addEventListener("click", function (e) {
+            alert(`This project contains texts from 中華電子佛典協會 (Chinese Buddhist Electronic Text Association CBETA) http://cbeta.org, licensed under CC BY-NC-SA 3.0 TW.                    
+To review the terms of the license, visit https://creativecommons.org/licenses/by-nc-sa/3.0/tw/legalcode.
+
+Furthermore, this project uses a digitalization of the Kangxi dictionary released under the MIT license, which can be accessed at https://github.com/7468696e6b/kangxiDictText.
+
+To review the license of this project, please visit https://github.com/notiho/comment-parser.`.replaceAll("\t", ""));
+        }); 
     </script>
 </body>
 
